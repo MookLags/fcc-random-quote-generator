@@ -12,7 +12,7 @@ const QuoteContainer = ({ changeColor, backgroundColor }) => {
   const twitterUrlEnd = `"${randomQuote.quote}" ${randomQuote.author}`
   
   const fetchRandomQuote = () => {
-    fetch("http://localhost:5000/api/quotes/random", {mode: 'cors'})
+    fetch("https://fcc-random-quote-generator.onrender.com/api/quotes/random", {mode: 'cors'})
     .then((res) => {
       return res.json();
     })
