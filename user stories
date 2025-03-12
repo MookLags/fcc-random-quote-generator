@@ -1,0 +1,13 @@
+planning for the quote generator
+
+I need a wrapper element of some kind with an id of quote-box
+Within quote-box, I need another element that displays the quote with an id of text
+There needs to be another text element of some kind which displays the author and has an id "author"
+I need a button in there that says "New Quote" with an id of "new-quote"
+I also need a button which redirects to twitter which says "tweet-quote"
+On first load, a random quote needs to be generated and displayed right away (as well as the author)
+When I click the New Quote button, a new quote is fetched and displayed on the screen in the text elements
+When I click the twitter button, I am redirected to https://x.com/intent/post?hashtags=quotes&related=freecodecamp&text="Quote Here" Author Here
+The wrapper must be horizontally centered
+
+
