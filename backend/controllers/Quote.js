@@ -31,6 +31,8 @@ export const getQuotes = async (req, res) => {
 
 export const getRandomQuote = async (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   const quotes = await Quote.find({});
   const getRandomIndex = (max) => {
     return Math.floor(Math.random() * max);
